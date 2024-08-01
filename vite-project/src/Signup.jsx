@@ -29,7 +29,19 @@ function Signup() {
                                 className="form-control rounded-0"
                                 />
                         </div>
-                        <div></div>
+                        <div className="mb-3">
+                            <label htmlFor="password">
+                                <strong>Password</strong>
+                                </label>
+                                <input
+                                type="password"
+                                placeholder="Enter Password"
+                                autoComplete="off"
+                                name="password"
+                                className="form-control rounded-0"
+                                />
+
+                        </div>
                     </div>
                 </form>
             </div>
