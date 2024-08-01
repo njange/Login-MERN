@@ -39,9 +39,17 @@ function Signup() {
                                 autoComplete="off"
                                 name="password"
                                 className="form-control rounded-0"
-                                />
-
+                            />
+                            
                         </div>
+                        <button type="submit" className="btn btn-success w-100 rounded-0">
+                            Register
+
+                        </button>
+                        <p>Already Have an Account</p>
+                        <button className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
+                            Login
+                        </button>
                     </div>
                 </form>
             </div>
