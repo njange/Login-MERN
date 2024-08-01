@@ -1,4 +1,6 @@
+import React from 'react';
 import { useState } from 'react';
+
 
 function Signup() {
     return (
@@ -56,3 +58,6 @@ function Signup() {
         </div>
     )
 }
+
+export default Signup;
+
