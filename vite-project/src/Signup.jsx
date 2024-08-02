@@ -51,9 +51,9 @@ function Signup() {
 
                         </button>
                         <p>Already Have an Account</p>
-                        <button className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
+                        <Link to="/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
                             Login
-                        </button>
+                        </Link>
                     </div>
                 </form>
             </div>
