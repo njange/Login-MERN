@@ -5,9 +5,12 @@ import Signup from './Signup'
 function App() {
 
   return (
-    <div>
-      <Signup />
-    </div>
+   <BrowserRouter>
+   <Routes>
+    <Route path="/register" element={<Signup />} />
+    <Route path="/login" element={<Login />} />
+   </Routes>
+   </BrowserRouter>
   )
 }
 

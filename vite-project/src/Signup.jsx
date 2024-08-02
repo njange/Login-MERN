@@ -1,11 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function Signup() {
     return (
         <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
-            <div classname="bg-white p-3 rounded w-25">
+            <div className="bg-white p-3 rounded w-25">
                 <h2>Register</h2>
                 <form>
                     <div className="mb-3">
@@ -17,7 +19,7 @@ function Signup() {
                         placeholder="Enter Name"
                         autoComplete="off"
                         name="email"
-                        className="fform-control rounded-0"
+                        className="form-control rounded-0"
                         />
                         <div className="mb-3">
                             <label htmlFor="email">
