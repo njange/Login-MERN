@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
 function Signup() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post('', {name, email, password})
+            .then(result => console.log(result))
+            .catch(err => console.log(err))
+    };
 
     return (
         <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
