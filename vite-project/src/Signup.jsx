@@ -5,6 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function Signup() {
+
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    
     return (
         <div className="d-flex justify-content-center align-items-center bg-secondary vh-100">
             <div className="bg-white p-3 rounded w-25">
