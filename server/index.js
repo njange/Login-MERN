@@ -16,7 +16,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/loginapp")
 app.post('/register', (req, res) => {
     Employee.create(req.body)
         .then(employees => res.json(employees))
-        .catch(err => res.status(400).json(err));
+        .catch(err => res.json(err));
 });
 
 app.listen(5000, () => {
