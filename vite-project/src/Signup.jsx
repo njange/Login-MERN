@@ -11,9 +11,9 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/register', {name, email, password})
+        axios.post('http://localhost:5000/register', {name, email, password})
             .then(result => {console.log(result)
-                Navigate('/login')
+                navigate('/login')
             })
             .catch(err => console.log(err))
     };
