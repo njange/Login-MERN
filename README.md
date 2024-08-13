@@ -1,12 +1,5 @@
-### Step-by-Step Plan
-1. Create a `README.md` file.
-2. Add a project description.
-3. List the dependencies.
-4. Provide instructions for running the app.
 
-### Code for `README.md`
-```markdown
-# My React App
+# Login-MERN
 
 ## Project Description
 This is a simple React application that includes a Home component displaying a message indicating successful login. The application is styled with inline CSS for simplicity.
