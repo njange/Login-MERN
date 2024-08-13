@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -65,12 +65,12 @@ function Login() {
                         />
                     </div>
                     <button type="submit" className="btn btn-success w-100 rounded-0">
-                        Register
-                    </button>
-                    <p>Already Have an Account</p>
-                    <button className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
                         Login
                     </button>
+                    <p>Already Have an Account</p>
+                    <Link to="/register" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
+                        Sign Up
+                    </Link>
                 </form>
             </div>
         </div>
