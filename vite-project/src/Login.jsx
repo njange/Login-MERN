@@ -13,7 +13,10 @@ function Login() {
     axios.post('http://localhost:5000/login', {email, password})
       .then(result => {
         console.log(result)
+        if (result.data === 'Login Success') {
+          
         navigate('/home')
+        }
       })
       .catch(err => console.log(err))
   };
@@ -22,20 +25,6 @@ function Login() {
             <div className="bg-white p-3 rounded w-25">
                 <h2>Login</h2>
                 <form onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                        <label htmlFor="name">
-                            <strong>Name</strong>
-                        </label>
-                        <input
-                            type="text"
-                            placeholder="Enter Name"
-                            autoComplete="off"
-                            name="name"
-                            className="form-control rounded-0"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
-                        />
-                    </div>
                     <div className="mb-3">
                         <label htmlFor="email">
                             <strong>Email</strong>
