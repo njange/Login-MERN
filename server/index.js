@@ -8,11 +8,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/employee")
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
+    app.get('/', (req, res) => {
+      res.send('Welcome to the server!');
+    });
 
+    
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
   Employee.findOne({ email: email})
@@ -37,6 +41,6 @@ app.post('/register', (req, res) => {
 });
 
 app.listen(5000, () => {
-  console.log('Server is running on port 5000');
+  console.log('Server is running on port 5001');
 });
 
