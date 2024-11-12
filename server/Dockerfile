@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:16
+FROM node:18
 
 # Set the working directory
 WORKDIR /usr/src/app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 
 # Start the backend application
-CMD ["node", "index.js"]
+CMD ["node", "index.cjs"]
