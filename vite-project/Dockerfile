@@ -20,7 +20,7 @@ RUN npm run build
 RUN npm install -g serve
 
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 5173
 
 # Serve the React app
 CMD ["serve", "-s", "build"]
