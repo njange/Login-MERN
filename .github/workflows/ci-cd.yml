@@ -48,4 +48,3 @@ jobs:
             cd /path/to/destination
             docker-compose pull
             docker-compose up -d
-            
